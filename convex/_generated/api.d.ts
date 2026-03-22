@@ -8,7 +8,9 @@
  * @module
  */
 
+import type * as boards from "../boards.js";
 import type * as messages from "../messages.js";
+import type * as workspaces from "../workspaces.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +19,9 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  boards: typeof boards;
   messages: typeof messages;
+  workspaces: typeof workspaces;
 }>;
 
 /**
