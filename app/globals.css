@@ -242,3 +242,72 @@
     width: 100%;
   }
 }
+
+/* Custom animation utilities */
+@utility animate-mask-peel {
+  animation: mask-peel 1.5s ease-out forwards;
+}
+
+@utility animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@utility animate-dramatic-zoom {
+  animation: dramatic-zoom 0.8s ease-out both;
+}
+
+@utility animate-text-glitch {
+  animation: text-glitch 3s ease-in-out infinite;
+}
+
+@utility animate-web-string {
+  animation: web-string 2s ease-in-out infinite;
+}
+
+@utility animate-film-grain {
+  animation: film-grain 0.5s steps(10) infinite;
+}
+
+@utility animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+@utility animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+@utility animation-delay-1500 {
+  animation-delay: 1500ms;
+}
+
+@utility animation-fill-mode-both {
+  animation-fill-mode: both;
+}
+
+@utility animation-steps-10 {
+  animation-timing-function: steps(10);
+}
+
+@utility animation-steps-8 {
+  animation-timing-function: steps(8);
+}
+
+@utility animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logoImage {
+    width: 200px;
+  }
+  
+  .card {
+    width: 200px;
+  }
+  
+  .loadingText {
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+  }
+}
